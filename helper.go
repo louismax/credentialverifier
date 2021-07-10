@@ -280,7 +280,6 @@ func datePipelineHandle(date string, category string) string {
 	return date
 }
 
-
 // addressCodeClassification 地址码分类
 func addressCodeClassification(addressCode string) string {
 	// 全国
@@ -317,7 +316,6 @@ func generatorOrderCode(sex int) string {
 
 	return strconv.Itoa(orderCode)
 }
-
 
 // 生成Bit码
 func generatorCheckBit(body string) string {

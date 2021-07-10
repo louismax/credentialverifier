@@ -83,7 +83,6 @@ func FakeId() string {
 	return FakeRequireId(true, "", "", 0)
 }
 
-
 // isEighteen 是否生成18位号码
 // address    省市县三级地区官方全称：如`北京市`、`台湾省`、`香港特别行政区`、`深圳市`、`黄浦区`
 // birthday   出生日期：如 `2000`、`198801`、`19990101`

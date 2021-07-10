@@ -78,6 +78,7 @@ func checkBirthdayCode(birthdayCode string) bool {
 
 	return err == nil
 }
+
 // checkAddressCode 检查地址码
 func checkAddressCode(addressCode string, birthdayCode string, strict bool) bool {
 	return getAddressInfo(addressCode, birthdayCode, strict)["province"] != ""
