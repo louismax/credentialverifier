@@ -9,11 +9,11 @@ func TestIsValid(t *testing.T) {
 
 func TestGetInfo(t *testing.T) {
 	t.Log(GetInfo("150000199703191282", false))
-	as,err := GetInfo("830000199505245608", true)
-	if err != nil{
+	as, err := GetInfo("830000199505245608", true)
+	if err != nil {
 		t.Error(err)
 	}
-	t.Logf("%+v",as)
+	t.Logf("%+v", as)
 }
 
 func TestFakeId(t *testing.T) {
@@ -23,4 +23,8 @@ func TestFakeId(t *testing.T) {
 func TestFakeRequireId(t *testing.T) {
 	t.Log(FakeRequireId(true, "台湾省", "199505", 0))
 	t.Log(FakeRequireId(true, "香港特别行政区", "199505", 0))
+}
+
+func TestUpgradeId(t *testing.T) {
+	t.Log(UpgradeId("610104620927690"))
 }
